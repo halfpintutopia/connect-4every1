@@ -1,3 +1,5 @@
+// Double line of defense for validation - `./validation` and mongoose. Although `./validation` will handle it more 'elegantly' to send the errors to the front end.
+
 const Validator = require("validator");
 // import isEmpty from './is-empty'; // ES6
 const isEmpty = require("./is-empty");

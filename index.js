@@ -9,7 +9,10 @@ const posts = require("./routes/api/posts");
 
 const app = express();
 
-// Body paerser middleware
+// instead of `npm i mongoose@5.2.8`
+// mongoose.set("useFindAndModify", false);
+
+// Body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
